@@ -1,1 +1,4 @@
-design
+.DS_Store
+design/
+sass/
+styles/core-styles.css.map
