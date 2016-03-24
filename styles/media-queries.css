@@ -1,0 +1,20 @@
+@media (max-width: 1260px) {
+
+  body {
+    min-width: 1000px;
+  }
+
+  #header-title-container {
+    min-width: 200px;
+    left: 700px;
+  }
+
+}
+
+@media (min-width: 1450px) {
+
+  header {
+    height: 940px;
+  }
+
+}
