@@ -5,19 +5,19 @@ $(document).ready(function() {
   $('#nav-about').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-about").offset().top
-      }, 400);
+      }, 500);
   });
 
   $('#nav-gallery').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-gallery").offset().top
-      }, 400);
+      }, 500);
   });
 
   $('#nav-contact').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-contact").offset().top
-      }, 400);
+      }, 500);
   });
 
   // Section title scroll arrows
@@ -25,19 +25,19 @@ $(document).ready(function() {
   $('#scroll-to-about').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-about").offset().top
-      }, 400);
+      }, 500);
   });
 
   $('#scroll-to-gallery').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-gallery").offset().top
-      }, 400);
+      }, 500);
   });
 
   $('#scroll-to-contact').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-contact").offset().top
-      }, 400);
+      }, 500);
   });
 
   // Scroll to top
@@ -45,9 +45,10 @@ $(document).ready(function() {
   $('#scroll-to-top').click(function(){
       $('html, body').animate({
           scrollTop: $("body").offset().top
-      }, 400);
+      }, 500);
   });
 
+  // Fade header in on page load
   $("nav").css("opacity", "1");
   $(".title-container").css("opacity", "1");
 
