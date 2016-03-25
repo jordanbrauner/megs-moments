@@ -34,5 +34,18 @@ $(document).ready(function() {
       }, 400);
   });
 
+  $('#scroll-to-contact').click(function(){
+      $('html, body').animate({
+          scrollTop: $("#section-contact").offset().top
+      }, 400);
+  });
+
+  // Scroll to top
+
+  $('#scroll-to-top').click(function(){
+      $('html, body').animate({
+          scrollTop: $("body").offset().top
+      }, 400);
+  });
 
 });

@@ -43,7 +43,8 @@ Gallery
   margin: -40px 0px 0px -250px;
   width: 300px;
   opacity: 0.3;
-  background-blend-mode: lighten; }
+  background-blend-mode: lighten;
+  z-index: 0; }
 
 #photo-gallery {
   margin-top: 50px;
@@ -161,5 +162,21 @@ form input {
 
 .form-column {
   display: inline-block; }
+
+form button {
+  margin-top: 40px;
+  width: 120px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  letter-spacing: 1.5px;
+  transition: background-color .15s linear, color .15s ease; }
+
+form button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #530676;
+  border: 1px solid #530676; }
 
 /*# sourceMappingURL=section-styles.css.map */
