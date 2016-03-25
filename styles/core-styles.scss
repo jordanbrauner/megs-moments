@@ -73,6 +73,7 @@ nav {
   color: white;
   letter-spacing: 2.25px;
   text-transform: uppercase;
+  cursor: default;
 }
 
 #logo-name {
@@ -100,34 +101,45 @@ nav {
   justify-content: flex-end;
 
   ul {
+    width: 370px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    top: -20px;
 
     li {
-      height: 20px;
-      margin-left: 40px;
+      // Alignment
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 42px;
+      padding: 0px 20px;
       list-style: none;
-      text-align: right;
+      // Font
       font-family: $fontCopy;
       font-size: 12px;
       font-weight: 300;
       letter-spacing: 1.5px;
       color: white;
       text-transform: uppercase;
+      // Decoration
+      cursor: pointer;
+      transition: border .15s ease, background-color .15s linear, color .15s ease;
     }
 
     li:hover {
-      cursor: pointer;
+      border-bottom: 1px solid rgba(255, 255, 255, .8);
     }
   }
 }
 
+#nav-about, #nav-gallery {
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
 #nav-contact {
-  position: relative;
-  top: -11px;
-  padding: 10px 15px;
   border: 1px solid white;
-  transition: background-color .15s linear, color .15s ease;
+
 }
 
 #nav-contact:hover {

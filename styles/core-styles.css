@@ -51,7 +51,8 @@ nav {
   font-size: 22px;
   color: white;
   letter-spacing: 2.25px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: default; }
 
 #logo-name {
   position: relative;
@@ -75,28 +76,34 @@ nav {
   display: flex;
   justify-content: flex-end; }
   #nav-options ul {
+    width: 370px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative;
+    top: -20px; }
     #nav-options ul li {
-      height: 20px;
-      margin-left: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 42px;
+      padding: 0px 20px;
       list-style: none;
-      text-align: right;
       font-family: "Open Sans", sans-serif;
       font-size: 12px;
       font-weight: 300;
       letter-spacing: 1.5px;
       color: white;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: border .15s ease, background-color .15s linear, color .15s ease; }
     #nav-options ul li:hover {
-      cursor: pointer; }
+      border-bottom: 1px solid rgba(255, 255, 255, 0.8); }
+
+#nav-about, #nav-gallery {
+  border: 1px solid rgba(255, 255, 255, 0); }
 
 #nav-contact {
-  position: relative;
-  top: -11px;
-  padding: 10px 15px;
-  border: 1px solid white;
-  transition: background-color .15s linear, color .15s ease; }
+  border: 1px solid white; }
 
 #nav-contact:hover {
   background-color: white;
