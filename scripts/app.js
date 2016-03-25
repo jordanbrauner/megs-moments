@@ -1,6 +1,27 @@
 $(document).ready(function() {
   "use strict";
 
+  // Nav bar scroll links
+  $('#nav-about').click(function(){
+      $('html, body').animate({
+          scrollTop: $("#section-about").offset().top
+      }, 400);
+  });
+
+  $('#nav-gallery').click(function(){
+      $('html, body').animate({
+          scrollTop: $("#section-gallery").offset().top
+      }, 400);
+  });
+
+  $('#nav-contact').click(function(){
+      $('html, body').animate({
+          scrollTop: $("#section-contact").offset().top
+      }, 400);
+  });
+
+  // Section title scroll arrows
+
   $('#scroll-to-about').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-about").offset().top
