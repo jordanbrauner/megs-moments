@@ -25,14 +25,14 @@ Common Styles
 
 // Scroll arrows
 
-i {
+.fa-angle-down {
   z-index: 10;
-  // transition: transform .2s ease;
+  transition: transform .2s ease;
 }
 
-i:hover {
+.fa-angle-down:hover {
   cursor: pointer;
-  // transform: scale(1.4) translate(0px, 4px);
+  transform: translateY(4px);
 }
 
 a {
@@ -55,13 +55,13 @@ header {
   background-image: url("../img/core/header-image.jpg");
   background-size: cover;
   background-position: center left;
-  box-shadow: inset 0px 80px 130px 5px rgba(10, 10, 10, 0.4);
+  box-shadow: inset 0px 80px 140px 5px rgba(0, 0, 0, 0.4);
 }
 
 nav {
   display: flex;
   justify-content: flex-start;
-  padding: 40px 50px 0px 50px;
+  padding: 55px 50px 0px 50px;
 }
 
 #logo {
@@ -75,6 +75,25 @@ nav {
   text-transform: uppercase;
 }
 
+#logo-name {
+  position: relative;
+  top: -55px;
+  z-index: 1;
+}
+
+#logo-mm {
+  position: relative;
+  top: -15px;
+  left: -20px;
+  width: 140px;
+  height: 50px;
+  z-index: 0;
+  background-image: url("../img/core/mm-logo-w.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+}
+
 #nav-options {
   width: 70%;
   display: flex;
@@ -85,6 +104,7 @@ nav {
     justify-content: space-between;
 
     li {
+      height: 20px;
       margin-left: 40px;
       list-style: none;
       text-align: right;
@@ -140,9 +160,10 @@ Section Titles
 
 .title h3 {
   font-family: $fontHeader;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: lighter;
-  letter-spacing: 1.25px;
+  letter-spacing: 1.75px;
+  margin-top: -5px
 }
 
 .title p {

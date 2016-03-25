@@ -59,7 +59,14 @@ Gallery
   background-color: white;
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  box-shadow: 0px 5px 12px 0px rgba(10, 10, 10, 0.3);
+  transition: all .15s ease;
+  cursor: pointer; }
+
+#photo-gallery div:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 5px 12px 0px rgba(10, 10, 10, 0.3), inset 0 0 100px 100px rgba(255, 255, 255, 0.075); }
 
 #image-1 {
   background-image: url("../img/gallery/img-5028.jpg"); }
