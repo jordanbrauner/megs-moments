@@ -204,8 +204,13 @@ footer {
   font-size: 10px;
 }
 
-.footer-column {
+.footer-column-left, .footer-column-right {
   width: 40%;
+}
+
+.footer-column-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
  #scroll-to-top {
@@ -214,7 +219,6 @@ footer {
    align-content: center;
    align-items: center;
    position: relative;
-   left: 220px;
    bottom: 0px;
    width: 60px;
    height: 60px;
