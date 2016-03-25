@@ -41,7 +41,9 @@ header {
 nav {
   display: flex;
   justify-content: flex-start;
-  padding: 55px 50px 0px 50px; }
+  padding: 55px 50px 0px 50px;
+  opacity: 0;
+  transition: opacity 2s ease; }
 
 #logo {
   position: relative;
@@ -76,7 +78,7 @@ nav {
   display: flex;
   justify-content: flex-end; }
   #nav-options ul {
-    width: 370px;
+    width: 350px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -115,7 +117,9 @@ Section Titles
 ****************************************/
 .title-container {
   display: flex;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  opacity: 0;
+  transition: opacity 2s ease; }
 
 #scroll-to-about, #scroll-to-gallery, #scroll-to-contact {
   margin-right: 15px;

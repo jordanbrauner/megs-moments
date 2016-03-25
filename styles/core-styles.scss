@@ -62,6 +62,8 @@ nav {
   display: flex;
   justify-content: flex-start;
   padding: 55px 50px 0px 50px;
+  opacity: 0;
+  transition: opacity 2s ease;
 }
 
 #logo {
@@ -101,7 +103,7 @@ nav {
   justify-content: flex-end;
 
   ul {
-    width: 370px;
+    width: 350px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -139,7 +141,6 @@ nav {
 
 #nav-contact {
   border: 1px solid white;
-
 }
 
 #nav-contact:hover {
@@ -155,6 +156,8 @@ Section Titles
 .title-container {
   display: flex;
   justify-content: flex-start;
+  opacity: 0;
+  transition: opacity 2s ease;
 }
 
 #scroll-to-about, #scroll-to-gallery, #scroll-to-contact {

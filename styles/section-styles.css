@@ -120,7 +120,7 @@ Contact
 #contact-logo {
   display: flex;
   justify-content: center;
-  margin: 0 auto; }
+  height: 280px; }
 
 #contact-logo img {
   width: 310px;

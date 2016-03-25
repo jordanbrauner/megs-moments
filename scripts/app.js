@@ -48,4 +48,7 @@ $(document).ready(function() {
       }, 400);
   });
 
+  $("nav").css("opacity", "1");
+  $(".title-container").css("opacity", "1");
+
 });
