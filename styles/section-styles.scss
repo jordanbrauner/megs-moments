@@ -233,8 +233,9 @@ form input {
   display: inline-block;
 }
 
-form button {
+form button, #submit {
   margin-top: 40px;
+  padding: 0;
   width: 120px;
   height: 50px;
   background-color: rgba(0,0,0,0);
@@ -244,7 +245,7 @@ form button {
   transition: background-color .15s linear, color .15s ease;
 }
 
-form button:hover {
+form button:hover, #submit:hover {
   cursor: pointer;
   color: white;
   background-color: $colorPrimary;

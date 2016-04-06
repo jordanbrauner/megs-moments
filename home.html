@@ -94,41 +94,41 @@
     </div>
 
     <div id="contact-form">
-      <form>
+      <form action="mail.php" method="POST">
         <!-- Row 1 -->
         <div class="form-row" id="form-name">
           <div class="form-column">
             <label>First Name *</label>
-            <input placeholder="Jane"></input>
+            <input name="first-name" placeholder="Jane"></input>
           </div>
           <div class="form-column">
             <label>Last Name *</label>
-            <input placeholder="Doe"></input>
+            <input name="last-name" placeholder="Doe"></input>
           </div>
         </div>
         <!-- Row 2 -->
         <div class="form-row" id="form-email">
           <div class="form-column">
             <label>Email Address *</label>
-            <input placeholder="jane@janedoe.com"></input>
+            <input name="email" placeholder="jane@janedoe.com"></input>
           </div>
         </div>
         <!-- Row 3 -->
         <div class="form-row" id="form-phone">
           <div class="form-column">
             <label>Phone Number</label>
-            <input placeholder="(123)456-7890"></input>
+            <input name="phone" placeholder="(123)456-7890"></input>
           </div>
         </div>
         <!-- Row 4 -->
         <div class="form-row" id="form-message">
           <div class="form-column">
             <label>Message *</label>
-            <textarea placeholder="Let me know how I can help you."></textarea>
+            <textarea name="message" placeholder="Let me know how I can help you."></textarea>
           </div>
         </div>
         <div class="form-row" id="form-submit">
-            <button>CONTACT</button>
+            <input id="submit" name="submit" type="submit" value="CONTACT">
         </div>
       </form>
     </div>

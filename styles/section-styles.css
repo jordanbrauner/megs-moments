@@ -181,8 +181,9 @@ form input {
 .form-column {
   display: inline-block; }
 
-form button {
+form button, #submit {
   margin-top: 40px;
+  padding: 0;
   width: 120px;
   height: 50px;
   background-color: transparent;
@@ -191,7 +192,7 @@ form button {
   letter-spacing: 1.5px;
   transition: background-color .15s linear, color .15s ease; }
 
-form button:hover {
+form button:hover, #submit:hover {
   cursor: pointer;
   color: white;
   background-color: #530676;
