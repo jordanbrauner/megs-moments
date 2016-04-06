@@ -1,18 +1,17 @@
 <?php
 
   // Grab data from form
-  $firstName = $_POST["first-name"];
-  $lastName = $_POST["last-name"];
+  $firstName = $_POST["firstname"];
+  $lastName = $_POST["lastname"];
   $email = $_POST["email"];
   $phone = $_POST["phone"];
   $message = $_POST["message"];
 
   // More information for email
+  $from = "From: Meg's Moments";
   $to = "newboomoon@gmail.com";
-  $from = "From: Meg\'s Moments";
   $subject = "Meg's Moments: Form Submitted";
-
-  $body = "From: $firstName $lastName\n E-Mail: $email\n Phone: $phone \n Message:\n $message";
+  $body = "From: $firstName\n E-Mail: $email\n Phone: $phone \n Message:\n $message";
 
   if ($_POST["submit"]) {
     if (mail ($to, $subject, $body, $from)) {
