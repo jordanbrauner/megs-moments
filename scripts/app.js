@@ -1,6 +1,53 @@
 $(document).ready(function() {
   "use strict";
 
+
+  //////////////////////////////////////////////////////////////////
+  // Photo Gallery
+  //////////////////////////////////////////////////////////////////
+
+  $("#full-image img").hide();
+
+  // Set Mazimize Event Listeners
+  $("#photo-gallery div").on("click", function() {
+    $("#full-image img").show();
+    var tempUrl = "img/gallery/img-8185.jpg";
+    var image = $("#full-image img");
+    // var bg = $(this).css('background-image');
+    $(image).attr("src", tempUrl);
+    fullImageClick();
+
+    setTimeout(function() {
+      $(image).css("opacity", "1");
+    }, 150);
+
+  });
+
+  // On Click of Maximized Photo
+  var fullImageClick = function() {
+    $("#full-image img").on("click", function() {
+      $(this).css("opacity", "0");
+      $(this).off("click");
+      setTimeout(function() {
+        $("#full-image img").hide();
+      }, 250);
+    });
+  };
+
+
+  //////////////////////////////////////////////////////////////////
+  // Animations
+  //////////////////////////////////////////////////////////////////
+
+  // Fade header in on page load
+  $("nav").css("opacity", "1");
+  $(".title-container").css("opacity", "1");
+
+
+  //////////////////////////////////////////////////////////////////
+  // Scrolling
+  //////////////////////////////////////////////////////////////////
+
   // Nav bar scroll links
   $('#nav-about').click(function(){
       $('html, body').animate({
@@ -21,7 +68,6 @@ $(document).ready(function() {
   });
 
   // Section title scroll arrows
-
   $('#scroll-to-about').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-about").offset().top
@@ -41,15 +87,10 @@ $(document).ready(function() {
   });
 
   // Scroll to top
-
   $('#scroll-to-top').click(function(){
       $('html, body').animate({
           scrollTop: $("body").offset().top
       }, 500);
   });
-
-  // Fade header in on page load
-  $("nav").css("opacity", "1");
-  $(".title-container").css("opacity", "1");
 
 });

@@ -1,7 +1,23 @@
+/* Wide Desktop View */
+@media (min-width: 1450px) {
+
+  header {
+    height: 940px;
+  }
+
+  #photo-gallery {
+    width: 87%;
+
+  }
+
+}
+
+
+/* Medium Desktop View (temporary fix for title on main image) */
 @media (max-width: 1260px) {
 
   body {
-    min-width: 1000px;
+    /*min-width: 1000px;*/
   }
 
   #header-title-container {
@@ -11,10 +27,39 @@
 
 }
 
-@media (min-width: 1450px) {
+/* Narrow Desktop View */
+@media (max-width: 900px) {
 
-  header {
-    height: 940px;
+  body {
+    min-width: 900px;
   }
+
+  #photo-gallery div {
+    width: 40%;
+    margin: 2%;
+    padding-bottom: 40%;
+  }
+
+}
+
+/* Tablet View */
+@media only screen and (max-device-width: 768px) {
+
+  /*#photo-gallery div {
+    width: 40%;
+    margin: 2%;
+    padding-bottom: 40%;
+  }*/
+
+}
+
+/* Mobile View */
+@media only screen and (max-device-width: 480px) {
+
+  /*#photo-gallery div {
+    width: 73%;
+    padding-bottom: 73%;
+    margin-bottom: 5%;
+  }*/
 
 }
