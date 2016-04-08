@@ -9,14 +9,17 @@ $(document).ready(function() {
   $("#full-image img").hide();
 
   // Set Mazimize Event Listeners
-  $("#photo-gallery div").on("click", function() {
-    $("#full-image img").show();
-    var tempUrl = "img/gallery/img-8185.jpg";
+  $("#photo-gallery div").on("click", function(evt) {
+    var url = $(evt.target).css('background-image');
     var image = $("#full-image img");
-    // var bg = $(this).css('background-image');
-    $(image).attr("src", tempUrl);
+    // var newUrl = url.split('');
+    // url = newUrl.splice(4, (newUrl.length-5)).join('');
+
+    $(image).css("background-image", url);
     fullImageClick();
 
+    // Show image
+    $(image).show();
     setTimeout(function() {
       $(image).css("opacity", "1");
     }, 150);

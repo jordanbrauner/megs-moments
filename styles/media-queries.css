@@ -42,6 +42,13 @@
 
 }
 
+@media(max-width: 880px) {
+
+  #header-title-container {
+    display: none;
+  }
+}
+
 /* Tablet View */
 @media only screen and (max-device-width: 768px) {
 

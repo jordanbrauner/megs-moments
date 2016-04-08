@@ -69,14 +69,13 @@ Gallery
 
 #gallery-title-container {
   width: 360px;
-  padding: 80px 0 0 20%;
+  padding: 120px 0 30px 20%;
 }
 
 #gallery-mm {
   position: absolute;
-  // display: inline-flex;
-  margin: -40px 0px 0px -250px;
-  width: 300px;
+  margin: -40px 0px 0px -340px;
+  width: 380px;
   opacity: 0.3;
   background-blend-mode: lighten;
   z-index: 0;
@@ -114,13 +113,15 @@ Gallery
   display: flex;
   justify-content: center;
   width: 100%;
+  height: auto;
 }
 
 #full-image img {
-  width: 90%;
-  height: 90%;
   margin: 5%;
   opacity: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   transition: opacity .5s ease;
 }
 
