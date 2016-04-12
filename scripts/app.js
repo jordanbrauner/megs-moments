@@ -10,26 +10,33 @@ $(document).ready(function() {
 
   // Set Mazimize Event Listeners
   $("#photo-gallery div").on("click", function(evt) {
-    var url = $(evt.target).css('background-image');
+    // var url = $(evt.target).css('background-image');
     var image = $("#full-image img");
+    var tempUrl = "http://www.megsmoments.com/img/gallery/img-8185.jpg";
+
     // var newUrl = url.split('');
     // url = newUrl.splice(4, (newUrl.length-5)).join('');
 
-    $(image).css("background-image", url);
+    $(image).attr("src", tempUrl);
+    // $(image).css("background-image", tempUrl);
     fullImageClick();
 
     // Show image
     $(image).show();
-    setTimeout(function() {
-      $(image).css("opacity", "1");
-    }, 150);
+
+    // NOTE Test
+    $(image).css("height", "500px");
+
+    // setTimeout(function() {
+    //   $(image).css("opacity", "1");
+    // }, 150);
 
   });
 
   // On Click of Maximized Photo
   var fullImageClick = function() {
     $("#full-image img").on("click", function() {
-      $(this).css("opacity", "0");
+      // $(this).css("opacity", "0");
       $(this).off("click");
       setTimeout(function() {
         $("#full-image img").hide();

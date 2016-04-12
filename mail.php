@@ -11,14 +11,13 @@
   // More information for email
   $from = "From: Meg's Moments";
   $to = "newboomoon@gmail.com";
-  $subject = "Meg's Moments: Form Submitted";
-  $body = "<b>From</b>: $firstName $lastName \n <b>E-Mail</b>: $email\n <b>Phone</b>: $phone \n <b>Project Type</b>: $pType \n <b>Message</b>:\n $message";
+  $subject = "$firstName $lastName has contacted you.";
+  $body = "$firstName $lastName has filled out your form.\nDetails below:\n\nEmail: $email\nPhone: $phone\nProject Type: $pType\n\nMessage: $message";
 
   if ($_POST["submit"]) {
     if (mail ($to, $subject, $body, $from)) {
       echo "<p>Your message has been sent!</p>";
     } else {
-      console.log()
       echo "<p>Something went wrong. Go back and try again.</p>";
     }
   }
