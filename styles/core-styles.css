@@ -28,32 +28,6 @@ a:hover {
   text-decoration: underline; }
 
 /****************************************
-Common Animation Styles
-****************************************/
-.fade-in {
-  opacity: 0;
-  transition: opacity 2s ease; }
-
-.scroll-in {
-  opacity: 0;
-  transition: transform 2s ease, opacity 2s ease; }
-
-.in-view#about-title-container, .in-view#gallery-title-container {
-  opacity: 1;
-  transform: translateX(50px); }
-
-.scroll-in.thumbnail, .scroll-in#contact-title, .scroll-in#contact-form {
-  transform: translateY(100px);
-  transition: all 1.5s ease; }
-
-.in-view.thumbnail, .in-view#contact-title, .in-view#contact-form {
-  opacity: 1;
-  transform: translateY(0px); }
-
-.in-view#contact-form {
-  transition-delay: .25s; }
-
-/****************************************
 Header
 ****************************************/
 header {

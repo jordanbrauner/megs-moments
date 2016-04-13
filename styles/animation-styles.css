@@ -1,0 +1,24 @@
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease;
+  transition-delay: .2s; }
+
+.scroll-in {
+  opacity: 0;
+  transition: transform 2s ease, opacity 2s ease; }
+
+.in-view#about-title-container, .in-view#gallery-title-container {
+  opacity: 1;
+  transform: translateX(50px);
+  transition-delay: .3s; }
+
+.scroll-in.thumbnail, .scroll-in#contact-title, .scroll-in#contact-form {
+  transform: translateY(100px);
+  transition: all 1.5s ease; }
+
+.in-view.thumbnail, .in-view#contact-title, .in-view#contact-form {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: .3s; }
+
+/*# sourceMappingURL=animation-styles.css.map */

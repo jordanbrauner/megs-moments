@@ -11,6 +11,8 @@ $(document).ready(function() {
   // Set Maximize Event Listeners
   $("#photo-gallery img").on("click", function(evt) {
 
+    $("#full-image").css("display", "flex");
+
     var image = $("#full-image img");
     var url = $(evt.target).attr("src");
 
@@ -20,7 +22,7 @@ $(document).ready(function() {
 
     // Scroll to top of gallery when user clicks thumbnail
     $('html, body').animate({
-        scrollTop: $("#full-image").offset().top
+        scrollTop: $("#full-image").offset().top - 25
     }, 500);
 
     // Show image
@@ -34,10 +36,12 @@ $(document).ready(function() {
   // On Click of Maximized Photo
   var fullImageClick = function() {
     $("#full-image img").on("click", function() {
+
       $(this).css("opacity", "0");
       $(this).off("click");
       setTimeout(function() {
         $("#full-image img").hide();
+        $("#full-image").css("display", "none");
       }, 250);
 
       // Scroll to top of gallery page when user minimizes photo
@@ -94,7 +98,7 @@ $(document).ready(function() {
   $window.trigger("scroll");
 
   //////////////////////////////////////////////////////////////////
-  // Scrolling
+  // Scroll to sections on click
   //////////////////////////////////////////////////////////////////
 
   // Nav bar scroll links

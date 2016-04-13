@@ -8,10 +8,6 @@ Normalize
   border: 0;
 }
 
-body {
-  // background-color: black;
-}
-
 /****************************************
 Variables
 ****************************************/
@@ -47,49 +43,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-/****************************************
-Common Animation Styles
-****************************************/
-
-///////////////////////////////
-// FADE IN ELEMENTS
-///////////////////////////////
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 2s ease;
-}
-
-///////////////////////////////
-// SCROLL IN ELEMENTS
-///////////////////////////////
-
-.scroll-in {
-  opacity: 0;
-  transition: transform 2s ease, opacity 2s ease;
-}
-
-// Section Titles
-.in-view#about-title-container, .in-view#gallery-title-container {
-  opacity: 1;
-  transform: translateX(50px);
-}
-
-// Gallery Thumbnails
-.scroll-in.thumbnail, .scroll-in#contact-title, .scroll-in#contact-form {
-  transform: translateY(100px);
-  transition: all 1.5s ease;
-}
-
-.in-view.thumbnail, .in-view#contact-title, .in-view#contact-form {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-.in-view#contact-form {
-  transition-delay: .25s;
 }
 
 
