@@ -14,32 +14,29 @@
 
 .scroll-in {
   opacity: 0;
-  transition: transform 2s ease, opacity 2s ease;
+  transition: all 1.35s ease;
 }
 
-// Section Titles
-.in-view#about-title-container, .in-view#gallery-title-container {
+.scroll-in.thumbnail, .scroll-in#contact-title, .scroll-in#contact-form {
+  transform: translateY(100px);
+}
+
+.in-view#about-title-container, .in-view#gallery-title-container, .in-view#header-title-container {
   opacity: 1;
   transform: translateX(50px);
   transition-delay: .3s;
 }
 
-// Gallery Thumbnails
-.scroll-in.thumbnail, .scroll-in#contact-title, .scroll-in#contact-form {
-  transform: translateY(100px);
-  transition: all 1.5s ease;
-}
-
 .in-view.thumbnail, .in-view#contact-title, .in-view#contact-form {
   opacity: 1;
   transform: translateY(0px);
-  transition-delay: .3s;
+  transition-delay: .2s;
 }
 
 .in-view#contact-title {
-  transition-delay: .25s;
+  transition-delay: .15s;
 }
 
 .in-view#contact-form {
-  transition-delay: .375s;
+  transition-delay: .4s;
 }

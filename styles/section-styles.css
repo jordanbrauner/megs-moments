@@ -72,9 +72,6 @@ Gallery
   opacity: 0;
   transition: opacity 0.5s ease; }
 
-#full-image img:hover {
-  cursor: pointer; }
-
 #photo-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -90,8 +87,7 @@ Gallery
   width: 14em;
   height: 14em;
   overflow: hidden;
-  box-shadow: 0px 5px 12px 0px rgba(10, 10, 10, 0.3);
-  cursor: pointer; }
+  box-shadow: 0px 5px 12px 0px rgba(10, 10, 10, 0.3); }
 
 #photo-gallery .thumbnail img {
   position: absolute;

@@ -108,7 +108,6 @@ form button, #submit {
   transition: background-color .15s linear, color .15s ease; }
 
 form button:hover, #submit:hover {
-  cursor: pointer;
   color: white;
   background-color: #530676;
   border: 1px solid #530676; }

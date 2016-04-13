@@ -45,6 +45,11 @@ a:hover {
   text-decoration: underline;
 }
 
+// Cursor: pointer
+#full-image img:hover, .thumbnail, form button:hover, #submit:hover {
+  cursor: pointer
+}
+
 
 /****************************************
 Header
