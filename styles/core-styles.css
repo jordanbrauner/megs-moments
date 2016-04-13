@@ -42,11 +42,11 @@ Common Animation Styles
   opacity: 1;
   transform: translateX(50px); }
 
-.scroll-in.thumbnail {
+.scroll-in.thumbnail, .scroll-in#contact-title, .scroll-in#contact-form {
   transform: translateY(100px);
   transition: all 1.5s ease; }
 
-.in-view.thumbnail {
+.in-view.thumbnail, .in-view#contact-title, .in-view#contact-form {
   opacity: 1;
   transform: translateY(0px); }
 

@@ -82,7 +82,7 @@ $(document).ready(function() {
           (elementTopPosition <= windowBottomPosition)) {
         $element.addClass("in-view");
       } else {
-        $element.removeClass("in-view");
+        // $element.removeClass("in-view");
       }
     });
   };
