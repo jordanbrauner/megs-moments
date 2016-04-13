@@ -50,9 +50,6 @@ form {
   width: 440px;
   margin-top: 50px; }
 
-input, select, textarea {
-  outline-color: #a80cef; }
-
 form label {
   margin-bottom: 7px;
   text-align: left;
@@ -60,13 +57,17 @@ form label {
   font-family: "Open Sans", sans-serif;
   font-size: 11px; }
 
-form input, #form-dropdown select {
+input, select, textarea {
+  outline-color: #a80cef;
+  transition: box-shadow .15s ease; }
+
+input, select {
   margin-bottom: 25px;
   height: 38px;
   padding-left: 10px; }
 
-form input:hover {
-  box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.5); }
+input:hover, textarea:hover, select:hover {
+  box-shadow: inset 0px 0px 0px 0.5px rgba(0, 0, 0, 0.4); }
 
 #form-name {
   width: 440px;
@@ -81,12 +82,8 @@ form input:hover {
 
 #form-dropdown select {
   width: 440px;
-  transition: all .35s linear;
   -webkit-appearance: none;
   -webkit-border-radius: 0px; }
-
-#form-dropdown select:hover {
-  box-shadow: 0px 5px 10px 0px #ccc; }
 
 #form-message textarea {
   width: 430px;

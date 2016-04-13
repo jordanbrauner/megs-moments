@@ -28,6 +28,29 @@ a:hover {
   text-decoration: underline; }
 
 /****************************************
+Common Animation Styles
+****************************************/
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease; }
+
+.scroll-in {
+  opacity: 0;
+  transition: transform 2s ease, opacity 2s ease; }
+
+.in-view#about-title-container, .in-view#gallery-title-container {
+  opacity: 1;
+  transform: translateX(50px); }
+
+.scroll-in.thumbnail {
+  transform: translateY(100px);
+  transition: all 1.5s ease; }
+
+.in-view.thumbnail {
+  opacity: 1;
+  transform: translateY(0px); }
+
+/****************************************
 Header
 ****************************************/
 header {
@@ -41,9 +64,7 @@ header {
 nav {
   display: flex;
   justify-content: flex-start;
-  padding: 55px 50px 0px 50px;
-  opacity: 0;
-  transition: opacity 2s ease; }
+  padding: 55px 50px 0px 50px; }
 
 #logo {
   position: relative;
@@ -118,8 +139,7 @@ Section Titles
 .title-container {
   display: flex;
   justify-content: flex-start;
-  opacity: 0;
-  transition: opacity 2s ease; }
+  opacity: 0; }
 
 #scroll-to-about, #scroll-to-gallery, #scroll-to-contact {
   margin-right: 15px;

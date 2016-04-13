@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  "use strict";
 
+  "use strict";
 
   //////////////////////////////////////////////////////////////////
   // Photo Gallery
@@ -8,51 +8,90 @@ $(document).ready(function() {
 
   $("#full-image img").hide();
 
-  // Set Mazimize Event Listeners
-  $("#photo-gallery div").on("click", function(evt) {
-    // var url = $(evt.target).css('background-image');
+  // Set Maximize Event Listeners
+  $("#photo-gallery img").on("click", function(evt) {
+
     var image = $("#full-image img");
-    var tempUrl = "http://www.megsmoments.com/img/gallery/img-8185.jpg";
+    var url = $(evt.target).attr("src");
 
-    // var newUrl = url.split('');
-    // url = newUrl.splice(4, (newUrl.length-5)).join('');
-
-    $(image).attr("src", tempUrl);
-    // $(image).css("background-image", tempUrl);
+    // Set image url and click listener to minimize
+    $(image).attr("src", url);
     fullImageClick();
+
+    // Scroll to top of gallery when user clicks thumbnail
+    $('html, body').animate({
+        scrollTop: $("#full-image").offset().top
+    }, 500);
 
     // Show image
     $(image).show();
+    setTimeout(function() {
+      $(image).css("opacity", "1");
+    }, 150 );
 
-    // NOTE Test
-    $(image).css("height", "500px");
-
-    // setTimeout(function() {
-    //   $(image).css("opacity", "1");
-    // }, 150);
-
-  });
+  }); // end on click
 
   // On Click of Maximized Photo
   var fullImageClick = function() {
     $("#full-image img").on("click", function() {
-      // $(this).css("opacity", "0");
+      $(this).css("opacity", "0");
       $(this).off("click");
       setTimeout(function() {
         $("#full-image img").hide();
       }, 250);
+
+      // Scroll to top of gallery page when user minimizes photo
+      $('html, body').animate({
+          scrollTop: $("#section-gallery").offset().top
+      }, 500);
+
+    }); // end on click
+  }; // end fullImageClick()
+
+  //////////////////////////////////////////////////////////////////
+  // Animation: Fade In
+  //////////////////////////////////////////////////////////////////
+
+  // Fade in logo and header title on page load
+  $(".fade-in").css("opacity", "1");
+
+  // Fade in gallery on page load (and after images have loaded)
+  $("#photo-gallery").css("opacity", "1");
+
+  //////////////////////////////////////////////////////////////////
+  // Animation: Scroll In
+  //////////////////////////////////////////////////////////////////
+
+  var $animationElements = $('.scroll-in');
+  var $window = $(window);
+
+  var scrollAnimate = function() {
+    console.log("scrollAnimate called");
+    var windowHeight = $window.height();
+    var windowTopPosition = $window.scrollTop();
+    var windowBottomPosition = (windowTopPosition + windowHeight);
+
+    $.each($animationElements, function() {
+      var $element = $(this);
+      var elementHeight = $element.outerHeight();
+      var elementTopPosition = $element.offset().top;
+      var elementBottomPosition = (elementTopPosition + elementHeight);
+
+      // check to see if this current container is within viewport
+      if ((elementBottomPosition >= windowTopPosition) &&
+          (elementTopPosition <= windowBottomPosition)) {
+        $element.addClass("in-view");
+      } else {
+        $element.removeClass("in-view");
+      }
     });
   };
 
+  // Listen for scroll as well as window resize
+  $window.on("scroll resize", scrollAnimate);
 
-  //////////////////////////////////////////////////////////////////
-  // Animations
-  //////////////////////////////////////////////////////////////////
-
-  // Fade header in on page load
-  $("nav").css("opacity", "1");
-  $(".title-container").css("opacity", "1");
-
+  // Trigger in case the element is in view on page load
+  $window.trigger("scroll");
 
   //////////////////////////////////////////////////////////////////
   // Scrolling

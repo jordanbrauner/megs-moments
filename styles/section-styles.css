@@ -62,62 +62,49 @@ Gallery
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 50px; }
+  margin-top: 50px;
+  opacity: 0; }
 
-#photo-gallery div {
-  width: 22%;
+.thumbnail {
+  position: relative;
   margin: 1%;
-  padding-bottom: 22%;
-  background-color: white;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 15em;
+  height: 15em;
+  overflow: hidden;
   box-shadow: 0px 5px 12px 0px rgba(10, 10, 10, 0.3);
-  transition: all .15s ease;
   cursor: pointer; }
 
-#photo-gallery div:hover {
-  transform: translateY(-7px);
-  box-shadow: 0px 5px 12px 0px rgba(10, 10, 10, 0.3), inset 0 0 100px 100px rgba(255, 255, 255, 0.075); }
+#photo-gallery .thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  transition: opacity .3s ease;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+#photo-gallery .thumbnail img.portrait {
+  width: 100%;
+  height: auto; }
+
+#photo-gallery .thumbnail img:hover {
+  opacity: 0.7; }
 
 #full-image {
   display: flex;
   justify-content: center;
-  width: 100%;
-  transition: height 1s ease; }
+  width: 100%; }
 
 #full-image img {
-  margin: 5%;
-  width: 90%;
-  height: 90%;
-  transition: opacity 0.5s ease; }
+  margin: 2%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  box-shadow: 0px 5px 12px 0px rgba(10, 10, 10, 0.3); }
 
 #full-image img:hover {
   cursor: pointer; }
-
-#image-1 {
-  background-image: url("../img/gallery/img-5028.jpg"); }
-
-#image-2 {
-  background-image: url("../img/gallery/img-5414.jpg"); }
-
-#image-3 {
-  background-image: url("../img/gallery/img-8185.jpg"); }
-
-#image-4 {
-  background-image: url("../img/gallery/img-9513.jpg"); }
-
-#image-5 {
-  background-image: url("../img/gallery/img-jacob.jpg"); }
-
-#image-6 {
-  background-image: url("../img/gallery/img-foot.jpg"); }
-
-#image-7 {
-  background-image: url("../img/gallery/img-9532.jpg"); }
-
-#image-8 {
-  background-image: url("../img/gallery/img-dsc0105.jpg"); }
 
 /****************************************
 Information
