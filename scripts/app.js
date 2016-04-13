@@ -3,66 +3,6 @@ $(document).ready(function() {
   "use strict";
 
   //////////////////////////////////////////////////////////////////
-  // Photo Gallery
-  //////////////////////////////////////////////////////////////////
-
-  $("#full-image img").hide();
-
-  // Set Maximize Event Listeners
-  $("#photo-gallery img").on("click", function(evt) {
-
-    $("#full-image").css("display", "flex");
-
-    var image = $("#full-image img");
-    var url = $(evt.target).attr("src");
-
-    // Set image url and click listener to minimize
-    $(image).attr("src", url);
-    fullImageClick();
-
-    // Scroll to top of gallery when user clicks thumbnail
-    $('html, body').animate({
-        scrollTop: $("#full-image").offset().top - 25
-    }, 500);
-
-    // Show image
-    $(image).show();
-    setTimeout(function() {
-      $(image).css("opacity", "1");
-    }, 150 );
-
-  }); // end on click
-
-  // On Click of Maximized Photo
-  var fullImageClick = function() {
-    $("#full-image img").on("click", function() {
-
-      $(this).css("opacity", "0");
-      $(this).off("click");
-      setTimeout(function() {
-        $("#full-image img").hide();
-        $("#full-image").css("display", "none");
-      }, 250);
-
-      // Scroll to top of gallery page when user minimizes photo
-      $('html, body').animate({
-          scrollTop: $("#section-gallery").offset().top
-      }, 500);
-
-    }); // end on click
-  }; // end fullImageClick()
-
-  // Key press listener
-  $('html').on("keydown keyup", function(evt) {
-    if (evt.which == 39) {
-      // TODO next image
-    } else if (evt.which == 37) {
-      // TODO previous image
-    }
-  });
-
-
-  //////////////////////////////////////////////////////////////////
   // Animation: Fade In
   //////////////////////////////////////////////////////////////////
 
@@ -111,38 +51,19 @@ $(document).ready(function() {
   //////////////////////////////////////////////////////////////////
 
   // Nav bar scroll links
-  $('#nav-about').click(function(){
+  $('#nav-about, #scroll-to-about, #footer-about').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-about").offset().top
       }, 500);
   });
 
-  $('#nav-gallery').click(function(){
+  $('#nav-gallery, #scroll-to-gallery, #footer-gallery').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-gallery").offset().top
       }, 500);
   });
 
-  $('#nav-contact').click(function(){
-      $('html, body').animate({
-          scrollTop: $("#section-contact").offset().top + 3
-      }, 500);
-  });
-
-  // Section title scroll arrows
-  $('#scroll-to-about, #footer-about').click(function(){
-      $('html, body').animate({
-          scrollTop: $("#section-about").offset().top
-      }, 500);
-  });
-
-  $('#scroll-to-gallery, #footer-gallery').click(function(){
-      $('html, body').animate({
-          scrollTop: $("#section-gallery").offset().top
-      }, 500);
-  });
-
-  $('#scroll-to-contact').click(function(){
+  $('#nav-contact, #scroll-to-contact').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-contact").offset().top + 3
       }, 500);
@@ -153,6 +74,64 @@ $(document).ready(function() {
       $('html, body').animate({
           scrollTop: $("body").offset().top
       }, 500);
+  });
+
+  //////////////////////////////////////////////////////////////////
+  // Photo Gallery
+  //////////////////////////////////////////////////////////////////
+
+  $("#full-image img").hide();
+
+  // Set Maximize Event Listeners
+  $("#photo-gallery img").on("click", function(evt) {
+
+    $("#full-image").css("display", "flex");
+
+    var image = $("#full-image img");
+    var url = $(evt.target).attr("src");
+    // Set image url and click listener to minimize
+    $(image).attr("src", url);
+    fullImageClick();
+
+    // Scroll to top of gallery when user clicks thumbnail
+    $('html, body').animate({
+        scrollTop: $("#full-image").offset().top - 25
+    }, 500);
+
+    // Show image
+    $(image).show();
+    setTimeout(function() {
+      $(image).css("opacity", "1");
+    }, 150 );
+
+  }); // end on click
+
+  // On Click of Maximized Photo
+  var fullImageClick = function() {
+    $("#full-image img").on("click", function() {
+
+      $(this).css("opacity", "0");
+      $(this).off("click");
+      setTimeout(function() {
+        $("#full-image img").hide();
+        $("#full-image").css("display", "none");
+      }, 250);
+
+      // Scroll to top of gallery page when user minimizes photo
+      $('html, body').animate({
+          scrollTop: $("#section-gallery").offset().top
+      }, 500);
+
+    }); // end on click
+  }; // end fullImageClick()
+
+  // Key press listener
+  $('html').on("keydown keyup", function(evt) {
+    if (evt.which == 39) {
+      // TODO next image
+    } else if (evt.which == 37) {
+      // TODO previous image
+    }
   });
 
 });
