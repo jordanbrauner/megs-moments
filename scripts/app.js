@@ -16,18 +16,38 @@ $(document).ready(function() {
   // Animation: Scroll In
   //////////////////////////////////////////////////////////////////
 
-  var $animationElements = $('.scroll-in');
+  var $animationElementsTall = $('.scroll-in');
+  var $animationElementsSmall = $('.scroll-in.small');
   var $window = $(window);
 
   var scrollAnimate = function() {
+
+    // Variables
     var windowHeight = $window.height();
     var windowTopPosition = $window.scrollTop();
     var windowBottomPosition = (windowTopPosition + windowHeight);
 
-    $.each($animationElements, function() {
+    // For Tall
+    $.each($animationElementsTall, function() {
       var $element = $(this);
       var elementHeight = $element.outerHeight();
-      var elementTopPosition = $element.offset().top + 130;
+      var elementTopPosition = $element.offset().top + 200;
+      var elementBottomPosition = (elementTopPosition + elementHeight);
+
+      // check to see if this current container is within viewport
+      if ((elementBottomPosition >= windowTopPosition) &&
+          (elementTopPosition <= windowBottomPosition)) {
+        $element.addClass("in-view");
+      } else {
+        // $element.removeClass("in-view");
+      }
+    });
+
+    // For Small
+    $.each($animationElementsSmall, function() {
+      var $element = $(this);
+      var elementHeight = $element.outerHeight();
+      var elementTopPosition = $element.offset().top + 40;
       var elementBottomPosition = (elementTopPosition + elementHeight);
 
       // check to see if this current container is within viewport
