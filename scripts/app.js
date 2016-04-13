@@ -52,6 +52,16 @@ $(document).ready(function() {
     }); // end on click
   }; // end fullImageClick()
 
+  // Key press listener
+  $('html').on("keydown keyup", function(evt) {
+    if (evt.which == 39) {
+      // TODO next image
+    } else if (evt.which == 37) {
+      // TODO previous image
+    }
+  });
+
+
   //////////////////////////////////////////////////////////////////
   // Animation: Fade In
   //////////////////////////////////////////////////////////////////
@@ -70,7 +80,6 @@ $(document).ready(function() {
   var $window = $(window);
 
   var scrollAnimate = function() {
-    console.log("scrollAnimate called");
     var windowHeight = $window.height();
     var windowTopPosition = $window.scrollTop();
     var windowBottomPosition = (windowTopPosition + windowHeight);
@@ -78,7 +87,7 @@ $(document).ready(function() {
     $.each($animationElements, function() {
       var $element = $(this);
       var elementHeight = $element.outerHeight();
-      var elementTopPosition = $element.offset().top;
+      var elementTopPosition = $element.offset().top + 130;
       var elementBottomPosition = (elementTopPosition + elementHeight);
 
       // check to see if this current container is within viewport
@@ -116,7 +125,7 @@ $(document).ready(function() {
 
   $('#nav-contact').click(function(){
       $('html, body').animate({
-          scrollTop: $("#section-contact").offset().top
+          scrollTop: $("#section-contact").offset().top + 3
       }, 500);
   });
 
@@ -135,7 +144,7 @@ $(document).ready(function() {
 
   $('#scroll-to-contact').click(function(){
       $('html, body').animate({
-          scrollTop: $("#section-contact").offset().top
+          scrollTop: $("#section-contact").offset().top + 3
       }, 500);
   });
 
