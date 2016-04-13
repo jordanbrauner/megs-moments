@@ -176,23 +176,34 @@ footer {
   display: flex;
   justify-content: flex-end; }
 
+#footer-about, #footer-gallery {
+  padding: 0 1.5em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  color: white;
+  text-transform: uppercase; }
+
 #scroll-to-top {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
   position: relative;
   bottom: 0px;
   width: 60px;
-  height: 60px;
-  transition: background-color .15s ease;
-  cursor: pointer; }
+  height: 60px; }
 
 #scroll-to-top i {
   font-size: 2.5em;
   color: white; }
 
-#scroll-to-top:hover {
+#scroll-to-top, #footer-about, #footer-gallery {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transition: background-color .15s ease;
+  cursor: pointer; }
+
+#scroll-to-top:hover, #footer-about:hover, #footer-gallery:hover {
   background-color: black; }
 
 /*# sourceMappingURL=core-styles.css.map */

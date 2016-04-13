@@ -130,13 +130,13 @@ $(document).ready(function() {
   });
 
   // Section title scroll arrows
-  $('#scroll-to-about').click(function(){
+  $('#scroll-to-about, #footer-about').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-about").offset().top
       }, 500);
   });
 
-  $('#scroll-to-gallery').click(function(){
+  $('#scroll-to-gallery, #footer-gallery').click(function(){
       $('html, body').animate({
           scrollTop: $("#section-gallery").offset().top
       }, 500);

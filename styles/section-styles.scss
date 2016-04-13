@@ -121,14 +121,15 @@ Gallery
   justify-content: center;
   margin: 0 auto;
   margin-top: 50px;
+  width: 62em;
   opacity: 0;
 }
 
 .thumbnail {
   position: relative;
-  margin: 1%;
-  width: 15em;
-  height: 15em;
+  margin: .75em;
+  width: 14em;
+  height: 14em;
   overflow: hidden;
   box-shadow: 0px 5px 12px 0px rgba(10, 10, 10, 0.3);
   cursor: pointer;
