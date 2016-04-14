@@ -17,7 +17,7 @@ $(document).ready(function() {
   //////////////////////////////////////////////////////////////////
 
   var $animationElementsTall = $('.scroll-in');
-  var $animationElementsSmall = $('.scroll-in.small');
+  var $animationElementsQuick = $('.scroll-in.quick');
   var $window = $(window);
 
   var scrollAnimate = function() {
@@ -43,8 +43,8 @@ $(document).ready(function() {
       }
     });
 
-    // For Small
-    $.each($animationElementsSmall, function() {
+    // For Quick
+    $.each($animationElementsQuick, function() {
       var $element = $(this);
       var elementHeight = $element.outerHeight();
       var elementTopPosition = $element.offset().top + 40;
