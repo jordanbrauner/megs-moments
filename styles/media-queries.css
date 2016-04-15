@@ -1,71 +1,227 @@
-/* Wide Desktop View */
+/***********************************************************
+Wide Desktop View
+***********************************************************/
+
 @media (min-width: 1450px) {
 
   header {
     height: 940px;
   }
 
-  #photo-gallery {
-    /*width: 87%;*/
-  }
-
 }
 
 
-/* Medium Desktop View (temporary fix for title on main image) */
-@media (max-width: 1260px) {
+/***********************************************************
+Medium Desktop View (temporary fix for title on main image)
+***********************************************************/
 
-  body {
-    /*min-width: 1000px;*/
-  }
+@media (max-width: 1260px) {
 
   #header-title-container {
     min-width: 200px;
     left: 700px;
   }
 
-}
-
-/* Narrow Desktop View */
-@media (max-width: 900px) {
-
   body {
-    min-width: 900px;
+    min-width: 980px;
   }
 
-  /*#photo-gallery div {
+}
+
+/***********************************************************
+Tablet View
+***********************************************************/
+
+/*@media only screen and (max-device-width: 768px) {
+
+  #photo-gallery div {
     width: 40%;
     margin: 2%;
     padding-bottom: 40%;
-  }*/
+  }
 
-}
+}*/
 
-@media(max-width: 1000px) {
+/***********************************************************
+Mobile View
+***********************************************************/
+
+@media (max-device-width: 480px), (max-width: 768px) {
+
+  * {
+    /*border: 1px solid red;*/
+  }
+
+  body {
+    min-width: 480px;
+    width: 100%;
+  }
+
+  /**************************
+  Header
+  **************************/
+
+  header {
+    height: 700px;
+  }
+
+  nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+    padding: 0px 5%;
+    background-color: white;
+    z-index: -1;
+  }
+
+  /* Logo */
+  #logo {
+    display: flex;
+    align-items: center;
+  }
+
+  #logo-mm {
+    display: none;
+  }
+
+  #logo-circle {
+    position: absolute;
+    left: -4em;
+    top: -3.2em;
+    width: 9em;
+    height: 9em;
+    border-radius: 360px;
+    background-color: black;
+    border: 1px solid black;
+    opacity: 1;
+  }
+
+
+  #logo-mm-mobile {
+    display: inline-block;
+    position: relative;
+    top: 3.65em;
+    left: 3.8em;
+    width: 44%;
+    height: 20%;
+  }
+
+  #logo-name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    margin-left: 5em;
+    top: .4em;
+    width: 1em;
+    font-size: 1.15em;
+    letter-spacing: .025em;
+    line-height: .85em;
+    color: black;
+  }
+
+  #nav-options {
+    width: 6.5em;
+  }
+
+  #nav-options ul {
+    top: 0;
+  }
+
+  #nav-about, #nav-gallery {
+    display: none !important;
+  }
+
+  #nav-contact {
+    width: 6.5em;
+    position: relative;
+    border: 1px solid black;
+  }
+
+  #nav-contact span {
+    color: black;
+  }
+
+  #nav-contact:hover {
+    background-color: black;
+    cursor: pointer;
+  }
+
+  #nav-contact:hover span {
+    color: white;
+  }
 
   #header-title-container {
     display: none;
   }
-}
 
-/* Tablet View */
-@media only screen and (max-device-width: 768px) {
+  #header-background-image {
+    top: 0;
+    background-image: url("../img/core/about-image.jpg");
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+  }
 
-  /*#photo-gallery div {
-    width: 40%;
-    margin: 2%;
-    padding-bottom: 40%;
-  }*/
+  /**************************
+  About
+  **************************/
 
-}
+  #section-about {
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/core/fabric-texture.png");
+    background-repeat: repeat;
+    background-size: 150px;
+    box-shadow: none;
+  }
 
-/* Mobile View */
-@media only screen and (max-device-width: 480px) {
+  #profile-photo {
+    display: inherit;
+    position: relative;
+    top: -50px;
+    width: 220px;
+    height: 220px;
+    border: 7px solid white;
+    transform: rotate(-4deg);
+    box-shadow: 0px 8px 50px 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
 
-  /*#photo-gallery div {
-    width: 73%;
-    padding-bottom: 73%;
-    margin-bottom: 5%;
-  }*/
+  #about-title-container {
+    display: none;
+  }
+
+  /**************************
+  Gallery
+  **************************/
+
+  #section-gallery {
+    display: none;
+  }
+
+  /**************************
+  Information
+  **************************/
+
+  #section-information {
+    display: none;
+  }
+
+  /**************************
+  Contact
+  **************************/
+
+  #section-contact {
+    display: none;
+  }
+
+  /**************************
+  Footer
+  **************************/
+
+  footer {
+    display: none;
+  }
 
 }

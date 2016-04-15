@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   <meta charset="utf-8" />
@@ -19,16 +20,20 @@
   <!------------------------------------------------------>
 
   <header class="noselect">
+      <!-- Nav bar -->
       <nav class="fade-in">
         <div id="logo">
-          <div id="logo-mm"></div>
+          <div id="logo-circle">
+            <div id="logo-mm"></div>
+            <img id="logo-mm-mobile" src="img/core/mm-logo-w-o.png" />
+          </div>
           <div id="logo-name">Meg's Moments</div>
         </div>
         <div id="nav-options">
           <ul>
-            <li id="nav-about">About</span></li>
-            <li id="nav-gallery">Gallery</span></li>
-            <li id="nav-contact">Let's Talk</span></li>
+            <li id="nav-about"><span>About</span></li>
+            <li id="nav-gallery"><span>Gallery</span></li>
+            <li id="nav-contact"><span>Let's Talk</span></li>
           </ul>
         </div>
       </nav>
@@ -41,6 +46,9 @@
         <h3><em>forever captured</em></h3>
       </div>
     </div>
+
+    <!-- Background Image -->
+    <div id="header-background-image"></div>
   </header>
 
   <!------------------------------------------------------>
@@ -48,6 +56,7 @@
   <!------------------------------------------------------>
 
   <section id="section-about">
+    <img src="img/core/megan-about.jpg" id="profile-photo" />
     <div class="title-container scroll-in" id="about-title-container">
       <i class="fa fa-angle-down" id="scroll-to-gallery" ></i>
       <div class="title" id="about-title">
@@ -58,7 +67,6 @@
           <li>Moments lant Dus sita volorpor.</li>
           <li>At lab id untiundicta sitasitis in et aut quatqui venisquis dolorem.</li>
         </ul>
-        <!-- <img src="img/core/megan-about.jpg" id="profile-photo" /> -->
       </div>
     </div>
   </section>
@@ -168,8 +176,9 @@
           </div>
         </div>
         <div class="form-row" id="form-submit">
-            <input id="submit" name="submit" type="submit" value="CONTACT"></input>
+            <input id="submit" name="submit" type="submit" value="SEND"></input>
         </div>
+        <div class="form-row"><?php echo $result; ?></div>
       </form>
     </div>
 
