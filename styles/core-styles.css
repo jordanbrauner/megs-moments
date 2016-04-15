@@ -224,7 +224,7 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
-  transition: background-color .15s ease;
+  transition: all .15s ease;
   cursor: pointer; }
 
 #scroll-to-top:hover, #footer-about:hover, #footer-gallery:hover {

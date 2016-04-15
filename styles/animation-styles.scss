@@ -5,7 +5,7 @@
 .fade-in {
   opacity: 0;
   transition: opacity 1.25s ease;
-  transition-delay: .2s;
+  transition-delay: .125s;
 }
 
 ///////////////////////////////
@@ -37,13 +37,13 @@
 .in-view.thumbnail, .in-view#contact-title, .in-view#contact-form {
   opacity: 1;
   transform: translateY(0px);
-  transition-delay: .15s;
+  transition-delay: .1s;
 }
 
 .in-view#contact-title {
-  transition-delay: .15s;
+  transition-delay: .125s;
 }
 
 .in-view#contact-form {
-  transition-delay: .35s;
+  transition-delay: .225s;
 }

@@ -46,7 +46,7 @@ Tablet View
 Mobile View
 ***********************************************************/
 
-@media (max-device-width: 480px), (max-width: 768px) {
+@media (max-device-width: 480px), (max-width: 1020px) {
 
   * {
     /*border: 1px solid red;*/
@@ -271,9 +271,10 @@ Mobile View
     margin: 0;
     display: flex;
     align-self: center;
-    left: 6.5em;
-    top: -4.5em;
-    width: 60%;
+    left: 10em;
+    top: -4.75em;
+    width: 20em;
+    opacity: 0.225;
   }
 
   /* Full image */
@@ -299,7 +300,6 @@ Mobile View
 
   #section-information {
     height: 25em;
-    background-position: -5em 0em;
   }
 
   #information-border {
@@ -311,6 +311,7 @@ Mobile View
   **************************/
 
   #section-contact {
+    padding-bottom: 3em;
 
   }
 
@@ -345,10 +346,14 @@ Mobile View
   **************************/
 
   footer {
-    padding: 5em 5em;
+    width: 100%;
+    height: 13em;
+    padding: 0% 0%;
     text-align: center;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
   }
 
   .footer-column-left, .footer-column-right {
@@ -358,17 +363,17 @@ Mobile View
   .footer-column-left {
     position: relative;
     top: 5em;
-    margin-bottom: 5em;
   }
 
   .footer-column-right {
     position: relative;
-    top: -5em;
+    top: -2.5em;
     justify-content: center;
   }
 
-  #scroll-to-top {
-    top: -3em;
+  #scroll-to-top:hover, #footer-about:hover, #footer-gallery:hover {
+    transform: scale(1.2);
+    background-color: transparent;
   }
 
 }
