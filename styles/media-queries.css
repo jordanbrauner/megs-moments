@@ -62,7 +62,7 @@ Mobile View
   **************************/
 
   header {
-    height: 700px;
+    height: 29em;
   }
 
   nav {
@@ -120,6 +120,7 @@ Mobile View
     color: black;
   }
 
+  /* Nav options */
   #nav-options {
     width: 6.5em;
   }
@@ -151,7 +152,15 @@ Mobile View
     color: white;
   }
 
+  /* Header title */
   #header-title-container {
+    top: 9.25em;
+    left: 0;
+    display: block;
+    z-index: 2;
+  }
+
+  #scroll-to-about {
     display: none;
   }
 
@@ -169,7 +178,10 @@ Mobile View
 
   #section-about {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: column;
     background-image: url("../img/core/fabric-texture.png");
     background-repeat: repeat;
     background-size: 150px;
@@ -177,9 +189,9 @@ Mobile View
   }
 
   #profile-photo {
-    display: inherit;
+    display: block;
     position: relative;
-    top: -50px;
+    /*top: -2.75em;*/
     width: 220px;
     height: 220px;
     border: 7px solid white;
@@ -188,8 +200,34 @@ Mobile View
     z-index: 2;
   }
 
-  #about-title-container {
+  #scroll-to-gallery {
     display: none;
+  }
+
+  #about-title-container, #about-title h2, #about-title p, #about-title ul li {
+    color: black;
+    text-shadow: none;
+    list-style: none;
+  }
+
+  .in-view#about-title-container {
+    transform: translateX(0px);
+  }
+
+  #about-title-container {
+    width: 80%;
+    padding: 5%;
+    margin: 3% 0%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about-title-container h2 {
+    margin-bottom: .5em;
   }
 
   /**************************
