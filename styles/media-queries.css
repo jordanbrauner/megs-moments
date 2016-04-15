@@ -98,7 +98,6 @@ Mobile View
     opacity: 1;
   }
 
-
   #logo-mm-mobile {
     display: inline-block;
     position: relative;
@@ -155,7 +154,7 @@ Mobile View
   /* Header title */
   #header-title-container {
     top: 9.25em;
-    left: 0;
+    left: 3em;
     display: block;
     z-index: 2;
   }
@@ -181,6 +180,7 @@ Mobile View
     align-items: center;
     justify-content: flex-start;
     width: 100%;
+    height: 35em;
     flex-direction: column;
     background-image: url("../img/core/fabric-texture.png");
     background-repeat: repeat;
@@ -191,7 +191,6 @@ Mobile View
   #profile-photo {
     display: block;
     position: relative;
-    /*top: -2.75em;*/
     width: 220px;
     height: 220px;
     border: 7px solid white;
@@ -235,6 +234,35 @@ Mobile View
   **************************/
 
   #section-gallery {
+    border-top: .5px solid gray;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  /* Title */
+  #gallery-title-container {
+    width: 80%;
+  }
+
+  #scroll-to-contact {
+    display: none;
+  }
+
+  #gallery-mm {
+    display: none;
+  }
+
+  /* Full image */
+  #full-image {
+    display: none;
+  }
+
+  /* Photo Gallery */
+  #photo-gallery {
     display: none;
   }
 

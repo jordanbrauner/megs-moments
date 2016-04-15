@@ -7,13 +7,16 @@
   opacity: 0;
   transition: all 1.25s ease; }
 
+.scroll-in#header-title-container, .scroll-in#about-title-container, .scroll-in#gallery-title-container {
+  transform: translateX(-50px); }
+
+.in-view#header-title-container, .in-view#about-title-container, .in-view#gallery-title-container {
+  opacity: 1;
+  transform: translateX(0px);
+  transition-delay: .15s; }
+
 .scroll-in.thumbnail, .scroll-in#contact-title, .scroll-in#contact-form {
   transform: translateY(100px); }
-
-.in-view#about-title-container, .in-view#gallery-title-container, .in-view#header-title-container {
-  opacity: 1;
-  transform: translateX(50px);
-  transition-delay: .15s; }
 
 .in-view.thumbnail, .in-view#contact-title, .in-view#contact-form {
   opacity: 1;
