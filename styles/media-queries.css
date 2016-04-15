@@ -234,18 +234,33 @@ Mobile View
   **************************/
 
   #section-gallery {
-    border-top: .5px solid gray;
-
+    padding-top: 5em;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-direction: column;
     width: 100%;
     box-shadow: none;
   }
 
   /* Title */
   #gallery-title-container {
+    padding: 0;
+    margin-bottom: 3em;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #gallery-title h2 {
+    margin-bottom: .5em;
+  }
+
+  #gallery-title p {
     width: 80%;
+    margin: 0% 10%;
   }
 
   #scroll-to-contact {
@@ -253,7 +268,12 @@ Mobile View
   }
 
   #gallery-mm {
-    display: none;
+    margin: 0;
+    display: flex;
+    align-self: center;
+    left: 6.5em;
+    top: -4.5em;
+    width: 60%;
   }
 
   /* Full image */
@@ -263,7 +283,14 @@ Mobile View
 
   /* Photo Gallery */
   #photo-gallery {
-    display: none;
+    width: 95%;
+    margin: 2.5% 0%;
+  }
+
+  .thumbnail {
+    width: 13em;
+    height: 13em;
+    margin: .6em;
   }
 
   /**************************
@@ -271,7 +298,12 @@ Mobile View
   **************************/
 
   #section-information {
-    display: none;
+    height: 25em;
+    background-position: -5em 0em;
+  }
+
+  #information-border {
+
   }
 
   /**************************
@@ -279,7 +311,33 @@ Mobile View
   **************************/
 
   #section-contact {
-    display: none;
+
+  }
+
+  #contact-logo {
+    height: 12em;
+    margin-bottom: 3em;
+  }
+
+  #contact-logo img {
+    height: 16em;
+    width: 16em;
+  }
+
+  #contact-title {
+
+  }
+
+  #contact-title h2 {
+
+  }
+
+  #contact-title h4 {
+
+  }
+
+  #contact-form {
+
   }
 
   /**************************
@@ -287,7 +345,30 @@ Mobile View
   **************************/
 
   footer {
-    display: none;
+    padding: 5em 5em;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-column-left, .footer-column-right {
+    width: 100%;
+  }
+
+  .footer-column-left {
+    position: relative;
+    top: 5em;
+    margin-bottom: 5em;
+  }
+
+  .footer-column-right {
+    position: relative;
+    top: -5em;
+    justify-content: center;
+  }
+
+  #scroll-to-top {
+    top: -3em;
   }
 
 }
