@@ -31,7 +31,7 @@ $(document).ready(function() {
     $.each($animationElementsTall, function() {
       var $element = $(this);
       var elementHeight = $element.outerHeight();
-      var elementTopPosition = $element.offset().top + 200;
+      var elementTopPosition = $element.offset().top + 100;
       var elementBottomPosition = (elementTopPosition + elementHeight);
 
       // check to see if this current container is within viewport
@@ -47,7 +47,7 @@ $(document).ready(function() {
     $.each($animationElementsQuick, function() {
       var $element = $(this);
       var elementHeight = $element.outerHeight();
-      var elementTopPosition = $element.offset().top + 40;
+      var elementTopPosition = $element.offset().top + 35;
       var elementBottomPosition = (elementTopPosition + elementHeight);
 
       // check to see if this current container is within viewport

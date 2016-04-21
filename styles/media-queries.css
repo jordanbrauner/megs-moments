@@ -246,7 +246,7 @@ Mobile View
   /* Title */
   #gallery-title-container {
     padding: 0;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
     width: 100%;
     height: 5em;
     display: flex;
@@ -255,7 +255,7 @@ Mobile View
   }
 
   #gallery-title h2 {
-    margin-bottom: .5em;
+    margin-bottom: .75em;
   }
 
   #gallery-title p {
@@ -271,8 +271,8 @@ Mobile View
     margin: 0;
     display: flex;
     align-self: center;
-    left: 10em;
-    top: -4.75em;
+    margin-left: 2em;
+    margin-top: -5em;
     width: 20em;
     opacity: 0.225;
   }
@@ -334,7 +334,7 @@ Mobile View
   }
 
   #contact-title h4 {
-
+    padding: 0 32%;
   }
 
   #contact-form {

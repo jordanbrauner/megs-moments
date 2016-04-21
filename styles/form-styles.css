@@ -83,7 +83,25 @@ input:hover, textarea:hover, select:hover {
 #form-dropdown select {
   width: 440px;
   -webkit-appearance: none;
-  -webkit-border-radius: 0px; }
+  -webkit-border-radius: 0px;
+  background-color: transparent;
+  z-index: 5; }
+
+#form-select-arrows {
+  position: absolute;
+  padding-right: 10px;
+  height: 38px;
+  width: 430px;
+  margin-top: -3.85em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: white;
+  z-index: -1; }
+
+#form-select-arrows i {
+  font-size: .75em;
+  color: black; }
 
 #form-message textarea {
   width: 430px;
