@@ -34,6 +34,7 @@ Common Styles
 .fa-angle-down:hover {
   cursor: pointer;
   transform: translateY(4px);
+  text-shadow: 1px 3px 10px rgba(20, 20, 20, 0.5);
 }
 
 a {
@@ -91,10 +92,11 @@ nav {
   position: relative;
   top: -9px;
   width: 30%;
-  font-family: $fontHeader;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
   font-size: 22px;
   color: white;
-  letter-spacing: 2.25px;
+  letter-spacing: .025em;
   text-transform: uppercase;
   cursor: default;
 }
@@ -151,7 +153,7 @@ nav {
       text-transform: uppercase;
       // Decoration
       cursor: pointer;
-      transition: border .15s ease, background-color .15s linear, color .15s ease;
+      transition: border .15s ease, background-color .15s linear, color .05s ease;
     }
 
     li:hover {
@@ -167,12 +169,31 @@ nav {
 
 #nav-contact {
   border: 1px solid white;
+  z-index: 5;
+  overflow: hidden;
 }
 
 #nav-contact:hover {
-  background-color: white;
-  color: gray;
+  color: black;
   cursor: pointer;
+  z-index: 100;
+  overflow: hidden;
+}
+
+#hover-circle {
+  position: relative;
+  left: -35px;
+  height: .5em;
+  width: .5em;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: transform .75s ease;
+  z-index: -1;
+}
+
+#nav-contact:hover #hover-circle {
+  transform: scale(35);
+  background-color: white;
 }
 
 /****************************************
