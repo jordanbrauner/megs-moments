@@ -52,7 +52,7 @@ a:hover {
 }
 
 // Disables text highlighting with mouse
-.noselect {
+.no-select {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
   -moz-user-select: none;      /* Firefox */
@@ -62,7 +62,7 @@ a:hover {
 
 
 /****************************************
-Header
+Header (Logo and Nav)
 ****************************************/
 
 header {

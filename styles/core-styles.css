@@ -31,7 +31,7 @@ a:hover {
 #full-image img:hover, .thumbnail, form button:hover, #submit:hover {
   cursor: pointer; }
 
-.noselect {
+.no-select {
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -43,7 +43,7 @@ a:hover {
   user-select: none; }
 
 /****************************************
-Header
+Header (Logo and Nav)
 ****************************************/
 header {
   width: 100%;

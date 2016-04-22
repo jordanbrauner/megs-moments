@@ -2,9 +2,17 @@
 Wide Desktop View
 ***********************************************************/
 
-@media (min-width: 1450px) {
+@media (min-width: 1350px) {
 
   header {
+    height: 920px;
+  }
+
+  /**************************
+  About
+  **************************/
+
+  #section-about {
     height: 920px;
   }
 
@@ -47,7 +55,7 @@ Medium Desktop View
 }
 
 /***********************************************************
-Medium Desktop View transitioning to Tablet View
+(Step 1) Medium Desktop View transitioning to Tablet View
 ***********************************************************/
 
 @media (max-width: 1040px) {
@@ -60,6 +68,46 @@ Medium Desktop View transitioning to Tablet View
     min-width: 200px;
     top: 37em;
     left: 4.5em;
+  }
+
+  /**************************
+  Gallery
+  **************************/
+
+  #photo-gallery {
+    /*margin-top: 50px;*/
+    /*width: 62em;*/
+    max-width: 55em;
+    opacity: 0;
+  }
+
+  .thumbnail {
+    margin: .5em;
+    width: 12em;
+    height: 12em;
+  }
+
+}
+
+/***********************************************************
+(Step 2) Medium Desktop View transitioning to Tablet View
+***********************************************************/
+
+@media (max-width: 900px) {
+
+  /**************************
+  Gallery
+  **************************/
+
+  #photo-gallery {
+    width: 50em;
+    opacity: 0;
+  }
+
+  .thumbnail {
+    margin: .5em;
+    width: 10em;
+    height: 10em;
   }
 
 }
@@ -308,14 +356,14 @@ Tablet View (start using the alt. style for smaller screens)
 
   /* Photo Gallery */
   #photo-gallery {
-    width: 95%;
-    margin: 2.5% 0%;
+    width: 45em;
+    /*margin: 2.5% 0%;*/
   }
 
   .thumbnail {
-    width: 13em;
-    height: 13em;
-    margin: .6em;
+    width: 10em;
+    height: 10em;
+    margin: .5em;
   }
 
   /**************************
@@ -403,15 +451,46 @@ Tablet View (start using the alt. style for smaller screens)
 }
 
 /***********************************************************
-Mobile View
+Tablet View transitioning to Mobile View
 ***********************************************************/
 
-@media only screen and (max-device-width: 520px) {
+@media (max-width: 750px) {
 
   /**************************
   Gallery
   **************************/
 
+  #full-image {
+    max-height: 22em;
+  }
+
+  #photo-gallery {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  .thumbnail {
+    margin: 1.5%;
+    width: 20em;
+    max-width: 47%;
+    height: 47%;
+    padding-bottom: 47%;
+  }
+
+}
+
+/***********************************************************
+Mobile View
+***********************************************************/
+
+@media only screen and (max-device-width: 480px) {
+
+  /**************************
+  Gallery
+  **************************/
+
+  /*
   #full-image {
     height: 25em;
     max-height: 25em;
@@ -421,6 +500,6 @@ Mobile View
     width: 40%;
     margin: 2%;
     padding-bottom: 40%;
-  }
+  }*/
 
 }
