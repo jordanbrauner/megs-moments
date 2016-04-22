@@ -155,16 +155,15 @@ nav {
       cursor: pointer;
       transition: border .15s ease, background-color .15s linear, color .05s ease;
     }
-
-    li:hover {
-      border-bottom: 1px solid rgba(255, 255, 255, .8);
-    }
-
   }
 }
 
 #nav-about, #nav-gallery {
   border: 1px solid rgba(255, 255, 255, 0);
+}
+
+#nav-about:hover, #nav-gallery:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, .8);
 }
 
 #nav-contact {
@@ -187,7 +186,7 @@ nav {
   width: .5em;
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0);
-  transition: transform .75s ease;
+  transition: transform .5s ease;
   z-index: -1;
 }
 

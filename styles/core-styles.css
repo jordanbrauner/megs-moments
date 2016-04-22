@@ -122,11 +122,12 @@ nav {
       text-transform: uppercase;
       cursor: pointer;
       transition: border .15s ease, background-color .15s linear, color .05s ease; }
-    #nav-options ul li:hover {
-      border-bottom: 1px solid rgba(255, 255, 255, 0.8); }
 
 #nav-about, #nav-gallery {
   border: 1px solid rgba(255, 255, 255, 0); }
+
+#nav-about:hover, #nav-gallery:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8); }
 
 #nav-contact {
   border: 1px solid white;
@@ -146,7 +147,7 @@ nav {
   width: .5em;
   border-radius: 100%;
   background-color: transparent;
-  transition: transform .75s ease;
+  transition: transform .5s ease;
   z-index: -1; }
 
 #nav-contact:hover #hover-circle {

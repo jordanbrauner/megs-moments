@@ -143,12 +143,16 @@ Mobile View
   }
 
   #nav-contact:hover {
-    background-color: black;
     cursor: pointer;
   }
 
   #nav-contact:hover span {
     color: white;
+  }
+
+  #nav-contact:hover #hover-circle {
+    transform: scale(35);
+    background-color: black;
   }
 
   /* Header title */
