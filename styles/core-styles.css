@@ -95,7 +95,7 @@ nav {
   background-image: url("../img/core/mm-logo-w.png");
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.25; }
+  opacity: 0.45; }
 
 #nav-options {
   width: 70%;
@@ -196,7 +196,8 @@ Section Titles
   position: absolute;
   top: 270px;
   right: 20%;
-  color: white; }
+  color: white;
+  transition: none; }
 
 /****************************************
 Footer

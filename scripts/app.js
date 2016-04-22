@@ -105,7 +105,7 @@ $(document).ready(function() {
   // Set Maximize Event Listeners
   $("#photo-gallery img").on("click", function(evt) {
 
-    $("#full-image").css("display", "flex");
+    $("#full-image").css("display", "block");
 
     var image = $("#full-image img");
     var url = $(evt.target).attr("src");

@@ -88,8 +88,12 @@ input, select {
   padding-left: 10px;
 }
 
-input:hover, textarea:hover, select:hover {
-  box-shadow: inset 0px 0px 0px .5px rgba(0, 0, 0, .4);
+// input:hover, textarea:hover, select:hover {
+//   box-shadow: inset 0px 0px 0px .5px rgba(0, 0, 0, .4);
+// }
+
+select:hover {
+  cursor: pointer;
 }
 
 #form-name {

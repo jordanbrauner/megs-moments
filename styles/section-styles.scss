@@ -27,7 +27,7 @@ About
   position: relative;
   width: 360px;
   top: 120px;
-  left: 10%;
+  left: 4.5em;
   color: white;
 }
 
@@ -81,11 +81,11 @@ Gallery
 ///////////////////////////
 
 #full-image {
+  text-align: center;
   display: none;
-  justify-content: center;
-  margin: 0 auto;
-  width: 80%;
+  width: 90%;
   height: 40em;
+  max-height: 40em;
   margin-top: 3em;
   padding: 0% 5% 0% 5%;
 }

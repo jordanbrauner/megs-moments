@@ -5,25 +5,47 @@ Wide Desktop View
 @media (min-width: 1450px) {
 
   header {
-    height: 940px;
+    height: 920px;
   }
+
+  /**************************
+  Gallery
+  **************************/
+
+  #full-image {
+    height: 45em;
+    max-height: 45em;
+  }
+
+
 
 }
 
 
 /***********************************************************
-Medium Desktop View (temporary fix for title on main image)
+Medium Desktop View
 ***********************************************************/
 
 @media (max-width: 1260px) {
 
+  /**************************
+  Header
+  **************************/
+
   #header-title-container {
     min-width: 200px;
-    left: 700px;
+    top: 37em;
+    left: 4.5em;
+
   }
 
-  body {
-    min-width: 980px;
+  /**************************
+  Gallery
+  **************************/
+
+  #full-image {
+    height: 37em;
+    max-height: 37em;
   }
 
 }
@@ -32,25 +54,7 @@ Medium Desktop View (temporary fix for title on main image)
 Tablet View
 ***********************************************************/
 
-/*@media only screen and (max-device-width: 768px) {
-
-  #photo-gallery div {
-    width: 40%;
-    margin: 2%;
-    padding-bottom: 40%;
-  }
-
-}*/
-
-/***********************************************************
-Mobile View
-***********************************************************/
-
-@media (max-device-width: 480px), (max-width: 1020px) {
-
-  * {
-    /*border: 1px solid red;*/
-  }
+@media (max-device-width: 480px), (max-width: 800px) {
 
   body {
     min-width: 480px;
@@ -284,6 +288,8 @@ Mobile View
   /* Full image */
   #full-image {
     display: none;
+    height: 30em;
+    max-height: 30em;
   }
 
   /* Photo Gallery */
@@ -378,6 +384,29 @@ Mobile View
   #scroll-to-top:hover, #footer-about:hover, #footer-gallery:hover {
     transform: scale(1.2);
     background-color: transparent;
+  }
+
+}
+
+/***********************************************************
+Mobile View
+***********************************************************/
+
+@media only screen and (max-device-width: 520px) {
+
+  /**************************
+  Gallery
+  **************************/
+
+  #full-image {
+    height: 25em;
+    max-height: 25em;
+  }
+
+  #photo-gallery div {
+    width: 40%;
+    margin: 2%;
+    padding-bottom: 40%;
   }
 
 }
