@@ -17,8 +17,6 @@ Wide Desktop View
     max-height: 45em;
   }
 
-
-
 }
 
 
@@ -34,9 +32,7 @@ Medium Desktop View
 
   #header-title-container {
     min-width: 200px;
-    top: 37em;
-    left: 4.5em;
-
+    left: 44.35em;
   }
 
   /**************************
@@ -51,7 +47,25 @@ Medium Desktop View
 }
 
 /***********************************************************
-Tablet View
+Medium Desktop View transitioning to Tablet View
+***********************************************************/
+
+@media (max-width: 1040px) {
+
+  /**************************
+  Header
+  **************************/
+
+  #header-title-container {
+    min-width: 200px;
+    top: 37em;
+    left: 4.5em;
+  }
+
+}
+
+/***********************************************************
+Tablet View (start using the alt. style for smaller screens)
 ***********************************************************/
 
 @media (max-device-width: 480px), (max-width: 800px) {

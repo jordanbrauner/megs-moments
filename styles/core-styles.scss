@@ -246,7 +246,8 @@ Section Titles
   top: 270px;
   right: 20%;
   color: white;
-  transition: none;
+  transition: transform 1.25s ease, opacity 1.25s ease;
+  // transition: none;
 }
 
 /****************************************
