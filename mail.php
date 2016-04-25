@@ -30,12 +30,14 @@
     // If no errors, send the email
     if (!$errName && !$errEmail && !$errMessage) {
       if (mail ($to, $subject, $body, $from)) {
-        $result = "<div>Thank you! I will be in touch soon.</div>";
+        // $result = "<div>Thank you! I will be in touch soon.</div>";
       } else {
-        $result = "<div>Sorry, there was an error. Please try again later.</div>";
+        // $result = "<div>Sorry, there was an error. Please try again later.</div>";
+      }
     } else {
-      $result = "<div>Please enter your name.</div>"
+      // $result = "<div>Please enter your name.</div>"
     }
+
   }
-  
+
 ?>
