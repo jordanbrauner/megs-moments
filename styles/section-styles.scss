@@ -17,7 +17,8 @@ About
 #section-about {
   width: 100%;
   height: 800px;
-  background-image: url("../img/core/about-image.jpg");
+  // background-image: url("../img/core/about-image.jpg");
+  background-color: rgba(0, 0, 0, 0.75);
   background-size: cover;
   background-position: center left;
   box-shadow: inset 0px 80px 130px 5px rgba(10, 10, 10, 0.3);
@@ -25,10 +26,16 @@ About
 
 #about-title-container {
   position: relative;
-  width: 360px;
-  top: 120px;
-  left: 4.5em;
+  // width: 360px;
+  // top: 120px;
+  // left: 4.5em;
   color: white;
+  // background-color: red;
+  width: 30%;
+  padding: 5em 2.5em 0 2.5em;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y:hidden;
 }
 
 #header-title, #about-title {
@@ -37,6 +44,10 @@ About
 
 #about-title h2 {
   color: white;
+}
+
+#about-title p {
+  margin-bottom: 1em;
 }
 
 #profile-photo {

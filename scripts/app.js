@@ -71,29 +71,35 @@ $(document).ready(function() {
   //////////////////////////////////////////////////////////////////
 
   // Nav bar scroll links
-  $('#nav-about, #scroll-to-about, #footer-about').click(function(){
-      $('html, body').animate({
-          scrollTop: $("#section-about").offset().top
-      }, 500);
+  $("#nav-about, #scroll-to-about, #footer-about").click(function(){
+    $("html, body").animate({
+        scrollTop: $("#section-about").offset().top
+    }, 500);
   });
 
-  $('#nav-gallery, #scroll-to-gallery, #footer-gallery').click(function(){
-      $('html, body').animate({
-          scrollTop: $("#section-gallery").offset().top
-      }, 500);
+  $("#nav-gallery, #scroll-to-gallery, #footer-gallery").click(function(){
+    $("html, body").animate({
+        scrollTop: $("#section-gallery").offset().top
+    }, 500);
   });
 
-  $('#nav-contact, #scroll-to-contact').click(function(){
-      $('html, body').animate({
-          scrollTop: $("#section-contact").offset().top + 3
-      }, 500);
+  $("#nav-information, #scroll-to-information, #footer-information").click(function() {
+    $("html, body").animate({
+      scrollTop: $("#section-information").offset().top
+    });
+  });
+
+  $("#nav-contact").click(function(){
+    $("html, body").animate({
+        scrollTop: $("#section-contact").offset().top + 3
+    }, 500);
   });
 
   // Scroll to top
-  $('#scroll-to-top').click(function(){
-      $('html, body').animate({
-          scrollTop: $("body").offset().top
-      }, 500);
+  $("#scroll-to-top").click(function(){
+    $("html, body").animate({
+        scrollTop: $("body").offset().top
+    }, 500);
   });
 
   //////////////////////////////////////////////////////////////////

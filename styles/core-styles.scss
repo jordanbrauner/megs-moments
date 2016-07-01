@@ -130,7 +130,7 @@ nav {
   justify-content: flex-end;
 
   ul {
-    width: 350px;
+    width: 420px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -158,11 +158,11 @@ nav {
   }
 }
 
-#nav-about, #nav-gallery {
+#nav-about, #nav-gallery, #nav-information {
   border: 1px solid rgba(255, 255, 255, 0);
 }
 
-#nav-about:hover, #nav-gallery:hover {
+#nav-about:hover, #nav-gallery:hover, #nav-information:hover {
   border-bottom: 1px solid rgba(255, 255, 255, .8);
 }
 
@@ -205,7 +205,7 @@ Section Titles
   opacity: 0;
 }
 
-#scroll-to-about, #scroll-to-gallery, #scroll-to-contact {
+#scroll-to-about, #scroll-to-gallery, #scroll-to-information {
   margin-right: 15px;
   padding-top: 5px;
   font-size: 3em;
@@ -276,7 +276,7 @@ footer {
   justify-content: flex-end;
 }
 
-#footer-about, #footer-gallery {
+#footer-about, #footer-gallery, #footer-information {
   padding: 0 1.5em;
   font-family: $fontCopy;
   font-size: 1em;
@@ -298,7 +298,7 @@ footer {
    color: white;
  }
 
- #scroll-to-top, #footer-about, #footer-gallery {
+ #scroll-to-top, #footer-about, #footer-gallery, #footer-information {
    display: flex;
    justify-content: center;
    align-content: center;
@@ -307,6 +307,6 @@ footer {
    cursor: pointer;
  }
 
- #scroll-to-top:hover, #footer-about:hover, #footer-gallery:hover {
+ #scroll-to-top:hover, #footer-about:hover, #footer-gallery:hover, #footer-information:hover {
    background-color: black;
  }
